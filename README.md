@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # liveprojec
 
 ## Project setup
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# miclocvue
+>>>>>>> 287f6eb92b84565757901bb0474288230efa5dc3
