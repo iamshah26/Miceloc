@@ -10,7 +10,7 @@
                 </div>
                 <v-spacer v-if="$vuetify.breakpoint.mdAndUp"></v-spacer>
                 <div class=" d-flex align-center" v-if="$vuetify.breakpoint.mdAndUp">
-                    <div class="mx-2 pointer" v-for="item in items" :key="item">
+                    <div class="mx-2 pointer" v-for="(item,index) in items" :key="index">
                         <span @click="navigate(item.name)">{{ item.title }}</span>
                     </div>
                 </div>
@@ -20,7 +20,7 @@
                 </div>
             </v-container>
         </v-app-bar>
-        <v-navigation-drawer app clipped temporary v-model="drawer" width="100%" class="mt-11" color="#1f4643">
+        <v-navigation-drawer app clipped temporary v-model="drawer" width="100%" class="mt-13" color="#1f4643">
             <v-list nav dense>
                 <v-list-item-group v-model="group">
                     <v-list-item class="white--text">
@@ -62,7 +62,10 @@ export default {
         drawer: false,
         group: null,
         items: [
-            { title: 'HOME', name: "home" }, { title: 'HOW IT WORKS', name: "howItWorks" }, { title: 'BECOME A PARTNER', name: "becomePartner" }, { title: 'ABOUT US' },
+            { title: 'HOME', name: "home" },
+            { title: 'HOW IT WORKS', name: "howItWorks" },
+            { title: 'BECOME A PARTNER', name: "becomePartner" },
+            { title: 'ABOUT US' },
         ],
     }),
     methods: {
@@ -77,11 +80,5 @@ export default {
 <style scoped>
 .pointer {
     cursor: pointer;
-}
-
-.pointer:hover {
-    background-color: #1f4643;
-    color: white;
-    padding: 7px 7px;
 }
 </style>

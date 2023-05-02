@@ -34,7 +34,7 @@ export default {
 <style scoped>
 .stickyTabBar {
     position: sticky;
-    top: 60px;
+    top: 56px;
     z-index: 2;
 }
 

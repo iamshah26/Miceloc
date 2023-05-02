@@ -1,5 +1,5 @@
 <template>
-    <v-img src="@/assets/b277de3.jpg">
+    <v-img src="@/assets/b277de3.jpg"  height="100vh">
         <div class="text-center mt-15 white--text ">
             <p class="font-weight-light">
                 <span class="font-weight-black">M</span>EETINGS

@@ -7,10 +7,23 @@
   </div>
 </template>
 <script>
-import HomeHerSection from '@/components/HomeHerSection.vue'
-import HomeCardSection from '@/components/HomeCardSection.vue'
-import HomeFormSection from '@/components/HomeFormSection.vue'
-import FooterSection from '@/components/FooterSection.vue'
+const HomeHerSection = () =>
+  import(
+    /* webpackChunkName: "HomeHerSection" */ '@/components/HomeHerSection.vue'
+  );
+  const HomeCardSection = () =>
+  import(
+    /* webpackChunkName: "HomeCardSection" */ '@/components/HomeCardSection.vue'
+  );
+  const HomeFormSection = () =>
+  import(
+    /* webpackChunkName: "HomeFormSection" */ '@/components/HomeFormSection.vue'
+  );
+  const FooterSection = () =>
+  import(
+    /* webpackChunkName: "FooterSection" */ '@/components/FooterSection.vue'
+  );
+
 export default {
   name: 'HomeView',
   components: {

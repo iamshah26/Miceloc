@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div>
 
         <v-container id="NEARBY">
@@ -31,11 +31,11 @@ export default {
 <style scoped >
 .img-border {
     border-radius: 20px;
-}
-</style>
-<!-- <template>
+} 
+</style> -->
+<template>
     
-      <div >
+      <div class="mt-12 my-12" >
         <v-container id="NEARBY">
           <h2 class="py-5">Nearby</h2>
           <v-row>
@@ -87,4 +87,4 @@ export default {
   .img-border {
       border-radius: 20px;
   }
-  </style> -->
+  </style>

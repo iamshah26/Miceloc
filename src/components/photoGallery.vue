@@ -4,11 +4,11 @@
             <v-container>
                 <v-row>
                     <v-col cols="6" md="6" sm="12">
-                        <h2 class="display-1 font-weight-regular">Gallery</h2>
+                        <h2 class="display-1 font-weight-regular mt-12 ">Gallery</h2>
                     </v-col>
                     <v-col cols="6" md="6" sm="12">
                         <div>
-                            <v-tabs class="" background-color="#ddd" left dark>
+                            <v-tabs class="mt-12" background-color="#ddd" left dark>
                                 <v-tab class="black--text " href="#tab-1">
                                     ALL
                                 </v-tab>
@@ -35,7 +35,7 @@
                     </v-col>
                 </v-row>
                 <!-- images -->
-                <div class="mt-8 ">
+                <div class="mt-12 my-12">
                     <v-row class="">
                         <v-col v-for="n in 14" :key="n" class="d-flex child-flex" cols="4">
                             <v-img :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"

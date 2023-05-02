@@ -8,7 +8,10 @@
 
 </template>
 <script>
-import navBar from '@/components/navBar.vue'
+const navBar = () =>
+  import(
+    /* webpackChunkName: "navBar" */ '@/components/navBar.vue'
+  );
 export default {
   name: 'App',
   components: {
